@@ -5,7 +5,8 @@ public:
         int r=0;
         int m=0;
         map<int,int> mp;
-        while(r < arr.size())
+       // while(r < arr.size())
+       for(int r=0;r<arr.size();r++)
         {
             mp[arr[r]]++;
             if(mp.size()<=2)
@@ -21,7 +22,7 @@ public:
                 }
                 l++;
             }
-            r++;
+           // r++;
         }
         return m;
     }
