@@ -3,7 +3,6 @@ public:
     int search(vector<int>& nums, int t) {
         int l=0;
         int r=nums.size()-1;
-       
         while(l<=r)
         {
             int mid=(l+r)/2;
@@ -11,7 +10,7 @@ public:
             {
                 return mid;
             }
-            if(nums[mid] > t)
+            else if(nums[mid]>t)
             {
                 r=mid-1;
             }
@@ -19,7 +18,6 @@ public:
             {
                 l=mid+1;
             }
-           
         }
         return -1;
     }
